@@ -1,0 +1,28 @@
+.jobPost {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left-side {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .details {
+        .top-row {
+            display: flex;
+        }
+
+        .bottom-row {
+            display: flex;
+        }
+    }
+
+    .tags {
+        display: flex;
+        gap: 10px;
+    }
+}

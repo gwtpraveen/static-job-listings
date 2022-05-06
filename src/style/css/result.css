@@ -1,0 +1,25 @@
+.jobPost {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.jobPost .left-side {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.jobPost .details .top-row {
+  display: flex;
+}
+.jobPost .details .bottom-row {
+  display: flex;
+}
+.jobPost .tags {
+  display: flex;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=result.css.map */
