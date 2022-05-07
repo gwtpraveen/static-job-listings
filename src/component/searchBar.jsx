@@ -1,7 +1,6 @@
 import "../style/css/searchBar.css";
 
 const SearchBar = ({filters, removeFilter, clearAllFilters}) => {
-    console.log(filters)
     return ( 
         <header className="searchBox">
             {filters.length > 0 && <div className="searchRow">

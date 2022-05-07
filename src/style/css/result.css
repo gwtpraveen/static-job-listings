@@ -8,9 +8,10 @@
   justify-content: space-between;
   background-color: #fff;
   padding: 1.5rem;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+  box-shadow: 10px 10px 30px rgba(95, 163, 164, 0.2392156863);
   border-left: 5px solid #5fa3a4;
   border-radius: 10px;
+  position: relative;
 }
 .jobPost .leftSide {
   display: flex;
@@ -40,7 +41,7 @@
   background-color: #5fa3a4;
 }
 .jobPost .details .position {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: 0.8rem auto;
   color: #323b3a;
 }
@@ -61,8 +62,11 @@
 .jobPost .tags {
   display: flex;
   gap: 10px;
+  justify-content: flex-end;
   font-size: 0.9rem;
   font-weight: 700;
+  flex-wrap: wrap;
+  flex-basis: 50%;
 }
 .jobPost .tags .tag {
   background-color: #ecf7f9;
@@ -74,6 +78,34 @@
   background-color: #5ea4a6;
   color: #fff;
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .jobPost {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    padding-top: 3rem;
+    margin-top: 3.5rem;
+  }
+  .jobPost .leftSide {
+    margin-bottom: 1.5rem;
+  }
+  .jobPost .leftSide .logo {
+    position: absolute;
+    top: 0;
+    left: 1.2rem;
+    width: 70px;
+    transform: translateY(-50%);
+  }
+  .jobPost .leftSide .logo img {
+    width: 100%;
+  }
+  .jobPost .tags {
+    justify-content: flex-start;
+    border-top: 1px solid rgba(0, 0, 0, 0.201);
+    padding-top: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=result.css.map */
