@@ -21,7 +21,7 @@
   display: flex;
   gap: 0.6rem;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 .jobPost .details .topRow .companyName {
@@ -30,7 +30,7 @@
 }
 .jobPost .details .topRow .badge {
   border-radius: 10px;
-  padding: 0.3rem 0.4rem 0.13rem;
+  padding: 0.3rem 0.5rem 0.13rem;
   color: #fff;
 }
 .jobPost .details .topRow .featuredBadge {
@@ -40,8 +40,8 @@
   background-color: #5fa3a4;
 }
 .jobPost .details .position {
-  font-size: 1.4rem;
-  margin: 0.5rem auto;
+  font-size: 1.2rem;
+  margin: 0.8rem auto;
   color: #323b3a;
 }
 .jobPost .details .position:hover {

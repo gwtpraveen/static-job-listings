@@ -1,10 +1,20 @@
 import "../style/css/searchBar.css";
 
 const SearchBar = ({filters, removeFilter, clearAllFilters}) => {
+    console.log(filters)
     return ( 
         <header className="searchBox">
-            {filters.map(item => <p key={item}>{item}<button onClick={() => removeFilter(item)}>X</button></p>)}  
-            {filters.length > 0 && <button onClick={() => clearAllFilters()}>Clear</button>}  
+            {filters.length > 0 && <div className="searchRow">
+                <div className="filters">
+                    {filters.map(item => 
+                        <p className="tag" key={item}>
+                            {item}
+                            <button className="XBtn" onClick={() => removeFilter(item)}>X</button>
+                        </p>
+                    )}
+                </div>
+                <button className="clearBtn" onClick={() => clearAllFilters()}>Clear</button>
+            </div>}
         </header>
     );
 }
