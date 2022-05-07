@@ -62,4 +62,10 @@
   cursor: pointer;
 }
 
+@media (max-width: 900px) {
+  .searchBox {
+    margin-bottom: 9rem;
+  }
+}
+
 /*# sourceMappingURL=searchBar.css.map */
