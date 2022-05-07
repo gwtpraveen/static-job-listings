@@ -6,19 +6,21 @@ const Result = ({data, getFilter}) => {
 
 
     return ( 
-        <section className="jobPost">
-            <div className="left-side">
+        <section className="jobPost" style={{borderColor: data.featured ? "" : "transparent"}}>
+            <div className="leftSide">
                 <div className="logo">
                     <img src={data.logo} alt="company logo" />
                 </div>
                 <div className="details">
-                    <div className="top-row">
-                        <p>{data.company}</p>
-                        {data.new && <p>NEW!</p>}
-                        {data.featured && <p>FEATURED</p>}
+                    <div className="topRow">
+                        <p className="companyName">{data.company}</p>
+                        {data.new && <p className="newBadge badge">NEW!</p>}
+                        {data.featured && <p className="featuredBadge badge">FEATURED</p>}
                     </div>
+
                     <h2 className="position">{data.position}</h2>
-                    <div className="bottom-row">
+
+                    <div className="bottomRow">
                         <p>{data.postedAt}</p>
                         <p>{data.contract}</p>
                         <p>{data.location}</p>
@@ -27,10 +29,10 @@ const Result = ({data, getFilter}) => {
             </div>
 
             <div className="tags">
-                <p onClick={() => getFilter(data.role)}>{data.role}</p>
-                <p onClick={() => getFilter(data.level)}>{data.level}</p>
-                {data.languages.map(item => <p key={item} onClick={() => getFilter(item)}>{item}</p>)}
-                {data.tools.map(item => <p key={item} onClick={() => getFilter(item)}>{item}</p>)}
+                <p className="tag" onClick={() => getFilter(data.role)}>{data.role}</p>
+                <p className="tag" onClick={() => getFilter(data.level)}>{data.level}</p>
+                {data.languages.map(item => <p className="tag" key={item} onClick={() => getFilter(item)}>{item}</p>)}
+                {data.tools.map(item => <p className="tag" key={item} onClick={() => getFilter(item)}>{item}</p>)}
             </div>
         </section>
      );

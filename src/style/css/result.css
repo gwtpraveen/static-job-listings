@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .jobPost {
   width: 90%;
   max-width: 1000px;
@@ -5,21 +6,74 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+  border-left: 5px solid #5fa3a4;
+  border-radius: 10px;
 }
-.jobPost .left-side {
+.jobPost .leftSide {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.jobPost .details .top-row {
+.jobPost .details .topRow {
   display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
-.jobPost .details .bottom-row {
+.jobPost .details .topRow .companyName {
+  font-size: 1rem;
+  color: #5ea4a6;
+}
+.jobPost .details .topRow .badge {
+  border-radius: 10px;
+  padding: 0.3rem 0.4rem 0.13rem;
+  color: #fff;
+}
+.jobPost .details .topRow .featuredBadge {
+  background-color: #2a3838;
+}
+.jobPost .details .topRow .newBadge {
+  background-color: #5fa3a4;
+}
+.jobPost .details .position {
+  font-size: 1.4rem;
+  margin: 0.5rem auto;
+  color: #323b3a;
+}
+.jobPost .details .position:hover {
+  color: #5ea4a6;
+  cursor: pointer;
+}
+.jobPost .details .bottomRow {
   display: flex;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #858988;
+}
+.jobPost .details .bottomRow p + p::before {
+  content: "•";
+  margin-right: 0.5rem;
 }
 .jobPost .tags {
   display: flex;
   gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.jobPost .tags .tag {
+  background-color: #ecf7f9;
+  padding: 0.7rem;
+  color: #5ea4a6;
+  border-radius: 4px;
+}
+.jobPost .tags .tag:hover {
+  background-color: #5ea4a6;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=result.css.map */

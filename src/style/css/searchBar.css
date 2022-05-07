@@ -1,3 +1,6 @@
-
+.searchBox {
+  height: 15vh;
+  background: #5da5a4 url(../../../public/images/bg-header-desktop.svg);
+}
 
 /*# sourceMappingURL=searchBar.css.map */
