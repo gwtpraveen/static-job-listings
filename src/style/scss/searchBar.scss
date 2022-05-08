@@ -3,7 +3,7 @@
     background: #5da5a4 url(../../../public/images/bg-header-desktop.svg);
     position: relative;
     margin-bottom: 4rem;
-
+    
     .searchRow {
         background-color: #fff;
         width: 90%;
@@ -18,6 +18,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem 1.5rem;
+        box-shadow: 10px 10px 30px #5fa3a43d;
 
         .filters {
             display: flex;

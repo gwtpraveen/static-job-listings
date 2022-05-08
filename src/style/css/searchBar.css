@@ -18,6 +18,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  box-shadow: 10px 10px 30px rgba(95, 163, 164, 0.2392156863);
 }
 .searchBox .searchRow .filters {
   display: flex;
